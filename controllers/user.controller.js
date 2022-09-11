@@ -33,6 +33,7 @@ let users = [
     },
 ]
 
+
 module.exports.getAllUsers = (req, res) => {
     const { limit } = req.query;
     res.send(users.slice(0, limit))
